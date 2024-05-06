@@ -1,0 +1,158 @@
+<html>
+<head>
+    <title>FamCare Hospital</title>
+    <style>
+       body {
+            font-family: Georgia, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1;
+        }
+
+        .logo {
+            font-size: 22px;
+            color: black;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 20px;
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            transition: color 0.3s;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover {
+            color: gray;
+        }
+
+        nav ul li a::before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: gray;
+            transition: width 0.3s;
+        }
+
+        nav ul li a:hover::before {
+            width: 100%;
+        }
+        .footer {
+            background-color: gray;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+.container {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    color: black;
+
+  }
+
+ .service {
+    background-color: slategray;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+
+  }
+
+  .service h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .service p {
+    color: white;
+    font-size: 16px;
+  }
+    </style>
+</head>
+
+<body >
+
+<header>
+    <div class="logo">FamCare Hospital</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="appoint.html">Appointments</a></li>
+            <li><a href="donate.html">Donate Now</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <br>
+    <br>
+    <br>
+<div class="container">
+  <div class="service">
+    <h2>Cardiology</h2>
+    <p>Comprehensive cardiac care focused on prevention, diagnosis, and treatment of heart conditions. Our cardiology team utilizes state-of-the-art technology to provide personalized care and promote heart health.</p>
+  </div>
+
+  <div class="service">
+    <h2>Orthopedics</h2>
+    <p>Specialized orthopedic services to address musculoskeletal conditions and injuries. From joint replacements to sports medicine, our orthopedic experts offer advanced treatments to restore mobility and improve quality of life.</p>
+  </div>
+
+  <div class="service">
+    <h2>Oncology</h2>
+    <p>Innovative cancer care tailored to each patient's needs. Our oncology department combines cutting-edge treatments with compassionate support to guide patients through their cancer journey.</p>
+  </div>
+
+<div class="service">
+    <h2>Other Services</h2>
+    <p>Dentristry, Speech Pathology, Pscychology, Lab Examinations, Vaccinations, Labour Delivery</p>
+  </div>
+
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p> EMERGRNCY CALL (0078)</p>
+        <p>123 Main Street, City, State, ZIP</p>
+        <p>Email: info@famcarehospital.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>&copy; 2024 FamCare Hospital. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

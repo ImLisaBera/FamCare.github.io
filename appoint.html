@@ -1,0 +1,179 @@
+<html>
+<head>
+    <title>FamCare Hospital</title>
+    <style>
+       body {
+            font-family: Georgia, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1;
+        }
+
+        .logo {
+            font-size: 22px;
+            color: black;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 20px;
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            transition: color 0.3s;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover {
+            color: gray;
+        }
+
+        nav ul li a::before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: gray;
+            transition: width 0.3s;
+        }
+
+        nav ul li a:hover::before {
+            width: 100%;
+        }
+        .footer {
+            background-color: gray;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+.all{
+ font-family: Georgia, sans-serif;    
+color: black;
+    font-size: small;
+    background-color: white; 
+    padding: 2px 2px 5px 15px;
+    border: 150px solid rgba(199, 184, 162, 0.733);  
+    border-top: 5px rgba(199, 184, 162, 0.733);      
+      
+    
+    
+}
+.button{
+    background-color: slategray;
+    border: none;
+    color:rgb(12, 11, 11);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 24px;
+    font-weight: bolder;
+}
+.button:hover {
+    background-color: #3e8e41;
+    color:#ffd900;
+}
+    </style>
+</head>
+
+<body >
+
+<header>
+    <div class="logo">FamCare Hospital</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="appoint.html">Appointments</a></li>
+            <li><a href="donate.html">Donate Now</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <br>
+    <br>
+    <br>
+
+<pre class="all">
+        <h1 class="head">Please fill your information correctly!</h1>
+    FULL NAMES:                   <input type="text" name="" id="" required>
+
+    DATE OF BIRTH:                <input type="date" name="" id="" required>
+
+    EMAIL:                        <input type="email" name="" id="">
+
+    PASSWORD:                     <input type="password" name="" id="">
+
+    TELEPHONE:                    <input type="tel" name="" id="" placeholder="+2507--------" required>
+
+    GENDER:
+                            MALE  <input type="radio" name="" id="">  FEMALE <input type="radio" name="" id=""> NOT SPECIFIED <input type="radio" name="" id="" required>
+             
+    DO YOU HAVE AN APPOINTMENT:
+                             YES  <input type="checkbox" name="" id="">  NO <input type="checkbox" name="" id="" required>
+
+              IF YES ENTER YOUR APPOINTMENT DATE BELOW
+
+    APPOINTMENT DATE AND TIME     <input type="datetime-local" name="" id="">
+
+    WHICH MEDICAL INSURANCE YOU USE ?
+    
+                                <select name="" id="">
+                                          <Option hidden>Select your medical insurance</Option> 
+                                          <option >RSSB</option>
+                                          <option >SANLAM</option>
+                                          <option >BRITAM</option>
+                                          <option >MMI</option>
+                                          <option >MIS-UR</option>
+                                </select>
+  
+
+    ATTACH YOUR MEDICAL INSURANCE <input type="file" name="" id="" required autocapitalize=""> 
+              
+    
+    <input type="submit" value="submit" class="button" required>       <input type="reset" value="reset" class="button">
+    </pre>  
+
+<footer class="footer">
+    <div class="container">
+        <h2>Contact Us</h2>
+         <p> EMERGRNCY CALL (0078)</p>
+        <p>123 Main Street, City, State, ZIP</p>
+        <p>Email: info@famcarehospital.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </div>
+    <div class="container">
+        <p>&copy; 2024 FamCare Hospital. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

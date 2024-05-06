@@ -1,0 +1,196 @@
+<html>
+<head>
+    <title>FamCare Hospital</title>
+    <style>
+       body {
+            font-family: Georgia, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1;
+        }
+
+        .logo {
+            font-size: 22px;
+            color: black;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 20px;
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            transition: color 0.3s;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover {
+            color: gray;
+        }
+
+        nav ul li a::before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: gray;
+            transition: width 0.3s;
+        }
+
+        nav ul li a:hover::before {
+            width: 100%;
+        }
+
+.container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: slategray;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+        }
+
+        .services {
+            display: grid;
+             color: white;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .service {
+            background-color: #7b7e7a;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .service h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .service p {
+            font-size: 16px;
+        }
+
+        .footer {
+            background-color: white;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+.button{
+    background-color: black;
+    border: none;
+    color:white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 24px;
+    font-weight: bolder;
+}
+.button:hover {
+    background-color: #7b7e7a;
+    color:white;
+}
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">FamCare Hospital</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="appoint.html">Appointments</a></li>
+            <li><a href="donate.html">Donate Now</a></li>
+        </ul>
+    </nav>
+</header>
+<br>
+<br>
+<br>
+
+            <div class="services">
+               <div class="service">
+                <h2>Sarah's Triumph: Battling Illness at FamCare</h2>
+                <p>Sarah, burdened by a rare illness, found herself at FamCare Hospital, her spirit weighed down by uncertainty and fear.
+Amidst the sterile corridors, FamCare's compassionate staff embraced Sarah, offering comfort and strength in her darkest hour.
+Through the relentless fight against her illness, FamCare became Sarah's sanctuary, where hope blossomed amidst the pain.
+With each treatment and tender touch, Sarah's resilience grew, her spirit buoyed by the unwavering support of FamCare's dedicated team.
+Today, Sarah's victory over illness stands as a testament to the healing power of love and dedication found within the walls of FamCare Hospital.
+</p>
+            </div>
+           <div class="service">
+                <h2>Donation Options</h2>
+                <p>Choose from the following donation options:</p>
+                <ol>
+                    <li>One-time donation</li>
+                    <li>Recurring donation</li>
+                    <li>In-kind contributions</li>
+                </0l>
+                <p>Donate using:</p>
+                <ul>
+                    <li>Credit/Debit Card</li>
+                    <li>PayPal</li>
+                    <li>Bank Transfer</li>
+                </ul>
+        <input type="submit" value="Donate" class="button">
+            </div>
+        <div class="service">
+       <h2>Thank You!</h2>
+            <p>Dear Valued Patients,
+
+At FamCare Hospital, we extend our sincerest gratitude for entrusting us with your care. Your trust in our team means the world to us, and we are deeply grateful for the opportunity to serve you. Our commitment to providing compassionate, high-quality healthcare remains unwavering, and we look forward to continuing to support you on your journey to wellness. Thank you for choosing FamCare Hospital.</p>
+        </div>
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <h2>Contact Us</h2>
+         <p> EMERGRNCY CALL (0078)</p>
+        <p>123 Main Street, City, State, ZIP</p>
+        <p>Email: info@famcarehospital.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>&copy; 2024 FamCare Hospital. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

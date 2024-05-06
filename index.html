@@ -1,0 +1,219 @@
+<html>
+<head>
+    <title>FamCare Hospital</title>
+    <style>
+       body {
+            font-family: Georgia, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1;
+        }
+
+        .logo {
+            font-size: 22px;
+            color: black;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 20px;
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            transition: color 0.3s;
+            position: relative;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover {
+            color: gray;
+        }
+
+        nav ul li a::before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: gray;
+            transition: width 0.3s;
+        }
+
+        nav ul li a:hover::before {
+            width: 100%;
+        }
+
+        .frame {
+            position: relative;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .frame video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+
+       .doctors {
+            display: flex;
+            justify-content: space-between; 
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .doctor {
+            width: calc(25% - 10px); 
+            background-color: slategray;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .doctor img {
+            display: block;
+            margin: 0 auto;
+            width: 100px; 
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background-color: gray;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="cushycms">
+    <div class="logo">FamCare Hospital</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="appoint.html">Appointments</a></li>
+            <li><a href="donate.html">Donate Now</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <br>
+    <br>
+    <br>
+
+<div class="frame">
+
+    <video autoplay muted loop playsinline>
+        <source src="video/dance.mp4" type="video/mp4">
+    </video>
+
+    <div class="container">
+       <div class="content">
+           <h2>Welcome to FAMCARE Hospital</h2>
+           <p>A  LEADING PROVIDER OF QUALITY HEALTHCARE SERVICES</p>
+
+           <div class="doctors">
+
+              <div class="doctor">
+                  <img src="image/mission.jpg" alt="Mission Image">
+                  <p>Compassionate, High-Quality, Community-focused</p>
+               </div>
+
+               <div class="doctor">
+                  <img src="image/vision.jpg" alt="Vision Image">
+                  <p>Leading, Innovative, Patient-centered</p>
+               </div>
+             </div>
+         </div>
+
+        <h2>Meet Our Staff</h2>
+        <div class="doctors">
+
+            <div class="doctor">
+                <img src="image/doctor1.jpg" alt="Doctor 1">
+                <p>Dr. GATABAZI Marc - Dentist, Dietitian, Speech Pathologist</p>
+                <p>(+250789654544)</p>
+            </div>
+
+            <div class="doctor">
+                <img src="image/doctor2.jpg" alt="Doctor 2">
+                <p>Dr. MULISA Solange - Surgeon, Interpreter, Advocate</p>
+                <p>(+250783555215)</p>
+            </div>
+
+            <div class="doctor">
+                <img src="image/doctor3.jpg" alt="Doctor 3">
+                <p>Dr. BYIRINGIRO Blaise - Medical Technologist, Technician</p>
+                <p>(+250785676966)</p>
+            </div>
+ 
+            <div class="doctor">
+                <img src="image/doctor4.jpg" alt="Doctor 4">
+                <p>Dr. UWASE Benithe - Nurse, Anestheloogist</p>
+                <p>(+250783437827)</p>
+            </div>
+
+            <div class="doctor">
+                <img src="image/doctor5.jpg" alt="Doctor 5">
+                <p>Dr. TETA Sandrine - Pharmacist, Socail Worker, Physician</p>
+                <p>(+2507856732881)</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p> EMERGRNCY CALL (0078)</p>
+        <p>123 Main Street, City, State, ZIP</p>
+        <p>Email: info@famcarehospital.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </div>
+    <div class="container">
+        <p>&copy; 2024 FamCare Hospital. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
